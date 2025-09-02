@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vídeo 2D em 360°</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Fundo preto 360° -->
+      <a-sky color="#000000"></a-sky>                   
+      <!-- Tela com vídeo -->
+      <a-video 
+        src="#meuvideo" 
+        width="4" height="2" 
+        position="0 2 -5" 
+        rotation="0 0 0">
+      </a-video>
+
+      <!-- Fonte do vídeo -->
+      <video id="meuvideo" autoplay loop crossorigin="anonymous" webkit-playsinline playsinline>
+        <source src="ds.mp4"video/mp4">
+      </video>
+    </a-scene>
+  </body>
+</html>
