@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Diário de Bordo - Projeto Robôs Narradores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    h1 {
+      background-color: #004080;
+      color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 30px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    .checkboxes label {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-right: 10px;
+    }
+    button:hover {
+      background-color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Diário de Bordo – Projeto "Cenário DS com Robôs Narradores"</h1>
+
+  <section>
+    <label>Nome da Equipe:</label>
+    <input type="text">
+    <label>Período do Projeto:</label>
+    <input type="text" placeholder="de ___/___/_____ até ___/___/_____">
+  </section>
+
+  <section>
+    <h2>🗂️ 1. Identificação do Registro</h2>
+    <label>Data:</label>
+    <input type="text">
+    <label>Integrantes presentes:</label>
+    <input type="text">
+    <div class="checkboxes">
+      <label><input type="checkbox"> Planejamento</label>
+      <label><input type="checkbox"> Design Gráfico</label>
+      <label><input type="checkbox"> Narração / Roteiro</label>
+      <label><input type="checkbox"> Edição de Vídeo</label>
+      <label><input type="checkbox"> Programação A-Frame</label>
+      <label><input type="checkbox"> Testes</label>
+      <label><input type="checkbox"> Publicação</label>
+    </div>
+    <label>Responsáveis pela escrita do dia:</label>
+    <input type="text">
+  </section>
+
+  <section>
+    <h2>📝 2. Atividades Realizadas</h2>
+    <textarea rows="5"></textarea>
+  </section>
+
+  <section>
+    <h2>🎯 3. Objetivos do Dia</h2>
+    <textarea rows="4"></textarea>
+  </section>
+
+  <section>
+    <h2>🤔 4. Dificuldades Encontradas</h2>
+    <textarea rows="4"></textarea>
+  </section>
+
+  <section>
+    <h2>💡 5. Soluções Propostas / Ações para Resolver</h2>
+    <textarea rows="4"></textarea>
+  </section>
+
+  <section>
+    <h2>🌟 6. Aprendizados do Dia</h2>
+    <textarea rows="4"></textarea>
+  </section>
+
+  <section>
+    <h2>📎 7. Evidências (opcional)</h2>
+    <div class="checkboxes">
+      <label><input type="checkbox"> Print de tela</label>
+      <label><input type="checkbox"> Link para repositório GitHub</label>
+      <label><input type="checkbox"> Foto da equipe</label>
+      <label><input type="checkbox"> Vídeo / arte / código</label>
+      <label><input type="checkbox"> Captura da cena VR</label>
+    </div>
+    <label>Links, descrições ou colagens:</label>
+    <textarea rows="4" placeholder="Cole aqui links, prints ou descreva as evidências do dia..."></textarea>
+  </section>
+
+  <section>
+    <h2>📌 8. Planejamento para o Próximo Encontro</h2>
+    <textarea rows="4"></textarea>
+  </section>
+
+  <section>
+    <h2>🖋️ Assinatura dos Participantes</h2>
+    <textarea rows="3"></textarea>
+  </section>
+
+  <button onclick="alert('Registro salvo com sucesso! (Simulação)')">🔖 Salvar Registro</button>
+  <button onclick="window.print()">🖨️ Imprimir em PDF</button>
+</body>
+</html>
